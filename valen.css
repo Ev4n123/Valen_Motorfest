@@ -151,3 +151,125 @@ footer {
 }
 
 
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    nav {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header h2 {
+        font-size: 1.6rem;
+    }
+
+    .boton {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-top: 30px;
+    }
+
+    main {
+        gap: 40px;
+    }
+
+    .valen {
+        width: 45%;
+    }
+}
+
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+
+    nav {
+        position: static;
+        background: rgba(0,0,0,0.7);
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 18px;
+        margin: 8px;
+    }
+
+    header {
+        height: 80vh;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.4rem;
+    }
+
+    header h2 {
+        font-size: 1.3rem;
+    }
+
+    .boton {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 20px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .valen {
+        width: 90%;
+    }
+
+    .valen img {
+        height: 200px;
+    }
+}
+
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.1rem;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .valen h3 {
+        font-size: 22px;
+    }
+
+    .valen p {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 25px 15px;
+        font-size: 14px;
+    }
+}
+
+
+
+
