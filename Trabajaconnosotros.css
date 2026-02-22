@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+
+    background-image: url(https://www.motorbiscuit.com/wp-content/uploads/2021/04/Lamborghini-Urus-2019-1600-03-edited.jpeg?w=1200&h=675); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 50rem;
+}
+
+.contenedor {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    width: 100% ;
+    max-width: 400px;
+    padding: 40px 20px;
+}
+
+.titulo{
+    text-align: center;
+    margin: 2.2rem;
+}
+
+.titulo h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    color: #080808;
+}
+
+.nombre {
+    margin-bottom: 1.5rem;
+}
+
+.nombre input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+
+.contraseña {
+    margin-bottom: 1.5rem ;
+}
+
+.contraseña input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    justify-content: center;
+    padding: 20%;
+    align-items: center;
+    background-color: rgb(191, 183, 198);
+}
+
+.contenedor-cuenta {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    padding: 3rem;
+    border-radius: 0;
+    box-shadow:  0 10px 25px rgba(0, 0, 0, 15);
+}
+
+.contenedor-titulo {
+    text-align: center;
+    margin: 2.2rem;
+}
+
+.contenedor-titulo h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.nombre-cuenta {
+    margin-bottom: 1.2rem;
+}
+
+
+
+.nombre-cuenta input {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 0.8rem;
+    width: 100%;
+    transform: scale(0.3s);
+}
+
+.nombre-cuenta input:hover {
+    transition: alls;
+}
+
+.contraseña-cuenta {
+    margin-bottom: 1.2rem;
+}
+
+
+
+.contraseña-cuenta input {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 0.8rem;
+    width: 100%;
+}
+
+.confirmacion {
+    margin-bottom: 1.2rem;
+}
+
+
+
+.confirmacion input {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 0.8rem;
+    width: 100%;
+}
+
+.correo-electronico {
+    margin-bottom: 1.2rem;
+}
+
+
+
+.correo-electronico input {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 0.8rem;
+    width: 100%;
+}
+
+.fecha {
+    margin-bottom: 1.2rem;
+}
+
+
+.fecha input {
+    padding: 11px;
+    margin: 10px;
+    border-radius: 0.8rem;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%;
+    margin-top: 1.4rem;
+}
+.footer-regisro a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+ */

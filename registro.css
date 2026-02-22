@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b4b9c5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 50rem;
+}
+
+.content-principal {
+    text-align: center;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.50);
+}
+
+.header {
+    font-size: 1.3rem;
+    color: #3d3a3a;
+    margin-bottom: 1rem;
+}
+
+.name,
+.contrasena,
+.gmail {
+    margin: 20px 0;
+}
+
+.name input,
+.contrasena input,
+.gmail input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-top: 3px solid;
+    border-color: rgb(131, 129, 144);
+    background-color: #d9cccc;
+    outline: none;
+}
+
+.name input::placeholder,
+.contrasena input::placeholder,
+.gmail input::placeholder {
+    font-size: 15px;
+    font-weight: 600px;
+}
+
+button {
+    padding: 20px ;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background-color: #aaa1a1;
+    margin: 15px 0 0 0;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:hover {
+    background-color: rgb(58, 58, 61);
+    color: rgb(206, 208, 214);
+}
