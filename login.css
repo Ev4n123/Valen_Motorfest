@@ -1,100 +1,181 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: #5175d7;
+body{
+    background-color: #111;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    align-items: center;
-    justify-content: center;
     display: flex;
-    min-height: 50rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.contenedor-principal {
-    background-color: #ffffff;
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo h1{
+    color: #f5f5f5;
+    font-size: 3.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.titulo h2{
+    color: #d4d4d4;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.contenedor-principal{
+    border: 1px solid rgba(255,255,255,0.1);
+    background-color: rgba(27, 27, 27, 0.75);
     width: 100%;
     max-width: 400px;
-    padding: 40px 20px;
+    padding: 35px 25px;
     border-radius: 12px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.50);
+    box-shadow: 0 0 20px rgba(230, 26, 26, 0.2);
+    animation: aparecer 0.5s ease;
 }
 
-.header {
+.titulo,
+.contenedor-principal{
+    position: relative;
+    z-index: 1;
+}
+
+
+.header{
     text-align: center;
-    margin: 2rem;
+    margin-bottom: 2rem;
 }
 
-.header h2 {
-    font-size: 1.7rem;
-    color: #5175d7;
-    margin-bottom: 0.6rem;
+.header h2{
+    color: #e61a1a;
+    margin-bottom: 10px;
+    font-size: 2rem;
 }
 
-.header p {
-    font-size: 1.1rem;
-    color: #667fc2;
-    margin-bottom: 0.6rem;
+.header p{
+    color: #bdbdbd;
 }
 
-.user {
-    margin-bottom: 1.5rem;
+.user,
+.password{
+    margin-bottom: 1.2rem;
 }
 
-.user input {
+.user input,
+.password input{
     width: 100%;
-    padding: 15px;
-    border: none;
-    border-top: 3px solid;
-    border-color: #5175d7;
-    background-color: rgb(221, 217, 211);
+    padding: 14px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #252525;
+    color: white;
     outline: none;
+    transition: 0.3s;
 }
 
-.user input::placeholder {
-    color: #667fc2;
-    font-size: 0.95rem;
-    font-weight: 500;
+.user input::placeholder,
+.password input::placeholder{
+    color: #888;
 }
 
-.password {
-    margin-bottom: 1.5rem;
+.user input:focus,
+.password input:focus{
+    border-color: #e61a1a;
+    box-shadow: 0 0 8px rgba(230, 26, 26, 0.4);
 }
 
-.password input {
-    width: 100%;
-    padding: 15px;
-    border: none;
-    border-top: 3px solid;
-    border-color: #5175d7;
-    background-color: rgb(221, 217, 211);
-    outline: none;
-}
-.password input::placeholder {
-    color: #667fc2;
-    font-size: 0.95rem;
-    font-weight: 500;
+.forgot{
+    text-align: right;
+    margin-bottom: 1rem;
 }
 
-.button {
-    margin-bottom: 1.5rem;
-}
-
-.button button {
-    width: 100%;
-    padding: 15px;
-    border-radius: 5px;
-    border: none;
-    background-color: #667fc2;
-    transition: transform 0.2s, background 0.2s;
-}
-
-.button button:active {
-    transform: scale(0.95);
-}
-
-a {
+.forgot a{
+    color: #e61a1a;
     text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+}
+
+.button{
+    margin-bottom: 1rem;
+}
+
+.button button{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e61a1a;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background-color: #c91414;
+    transform: translateY(-2px);
+}
+
+.button button:active{
+    transform: scale(0.97);
+}
+.button button .ingresar{
+    color: #fff;
+    text-decoration: none;
+}
+
+.account{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.account a{
+    color: #e61a1a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.account a:hover{
+    text-decoration: underline;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
