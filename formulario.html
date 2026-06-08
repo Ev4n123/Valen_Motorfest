@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Manejo - Valen Motorfest - Velocidad, Conformidad y Comodidad</title>
+    <link rel="stylesheet" href="/CSS/formulario.css">
+</head>
+<body>
+<section class="compra-anticipada">
+
+    <header>
+        <h2>Compra Anticipada</h2>
+        <p>Complete el siguiente formulario para continuar con su solicitud de compra.</p>
+    </header>
+
+    <form>
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="cedula">Cédula o Documento de Identidad</label>
+            <input type="text" id="cedula" name="cedula" required>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <label for="correo">Correo Electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Información de Contacto</legend>
+
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion">
+
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad" name="ciudad">
+
+            <label for="provincia">Provincia</label>
+            <input type="text" id="provincia" name="provincia">
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Información del Comprador</legend>
+
+            <p>¿Posee licencia de conducir?</p>
+
+            <input type="radio" id="licenciaSi" name="licencia" value="si">
+            <label for="licenciaSi">Sí</label>
+
+            <input type="radio" id="licenciaNo" name="licencia" value="no">
+            <label for="licenciaNo">No</label>
+
+
+            <label for="numeroLicencia">Número de Licencia (Opcional)</label>
+            <input type="text" id="numeroLicencia" name="numeroLicencia">
+
+            <label for="metodoPago">Método de Pago Preferido</label>
+            <select id="metodoPago" name="metodoPago">
+                <option value="">Seleccione una opción</option>
+                <option>Contado</option>
+                <option>Financiamiento</option>
+            </select>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Experiencia de Conducción</legend>
+
+            <p>¿Ha conducido un vehículo anteriormente?</p>
+
+            <input type="radio" id="conduceSi" name="haConducido" value="si">
+            <label for="conduceSi">Sí</label>
+
+            <input type="radio" id="conduceNo" name="haConducido" value="no">
+            <label for="conduceNo">No</label>
+
+
+            <label for="experiencia">
+                Años de experiencia conduciendo
+            </label>
+
+            <select id="experiencia" name="experiencia">
+                <option>Menos de 1 año</option>
+                <option>1 a 3 años</option>
+                <option>4 a 7 años</option>
+                <option>Más de 7 años</option>
+            </select>
+
+            
+
+            <p>¿Ha conducido vehículos deportivos?</p>
+
+            <input type="radio" id="deportivoSi" name="deportivo" value="si">
+            <label for="deportivoSi">Sí</label>
+
+            <input type="radio" id="deportivoNo" name="deportivo" value="no">
+            <label for="deportivoNo">No</label>
+
+            <br><br>
+
+            <p>¿Ha conducido vehículos de alta potencia (más de 300 HP)?</p>
+
+            <input type="radio" id="potenciaSi" name="potencia" value="si">
+            <label for="potenciaSi">Sí</label>
+
+            <input type="radio" id="potenciaNo" name="potencia" value="no">
+            <label for="potenciaNo">No</label>
+
+            <br><br>
+
+            <label for="tipoVehiculo">
+                Tipo de vehículo que conduce habitualmente
+            </label>
+
+            <select id="tipoVehiculo" name="tipoVehiculo">
+                <option>Sedan</option>
+                <option>SUV</option>
+                <option>Pickup</option>
+                <option>Deportivo</option>
+                <option>Ninguno</option>
+            </select>
+
+            <br><br>
+
+            <p>Transmisión que sabe utilizar</p>
+
+            <input type="checkbox" id="automatica" name="transmision" value="automatica">
+            <label for="automatica">Automática</label>
+
+            <input type="checkbox" id="manual" name="transmision" value="manual">
+            <label for="manual">Mecánica (Manual)</label>
+
+            <br><br>
+
+            <label for="frecuencia">
+                Frecuencia de conducción
+            </label>
+
+            <select id="frecuencia" name="frecuencia">
+                <option>Todos los días</option>
+                <option>Varias veces por semana</option>
+                <option>Ocasionalmente</option>
+                <option>Rara vez</option>
+            </select>
+
+
+            <p>¿Ha participado en pruebas de manejo anteriormente?</p>
+
+            <input type="radio" id="pruebaSi" name="pruebaManejo" value="si">
+            <label for="pruebaSi">Sí</label>
+
+            <input type="radio" id="pruebaNo" name="pruebaManejo" value="no">
+            <label for="pruebaNo">No</label>
+
+        </fieldset>
+
+        <button type="submit">
+            Enviar Solicitud
+        </button>
+
+    </form>
+
+</section>
+
+
+    
+</body>
+</html>

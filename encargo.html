@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra Anticipada - Valen Motorfest - Velocidad, Conformidad y Comodidad</title>
+    <link rel="icon" href="/imagenes/ValenLogo.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="/CSS/encargo.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="home">Inicio</a>
+        <a href="Catalogo.html">Catalogo</a>
+        <a href="Sobre Nosotros.html">Sobre Nosotros</a>
+        <a href="contacto.html">Contactanos</a>
+        <a href="encargo.html">Encargos</a>
+    </nav>
+
+    <header>
+        <video autoplay muted loop playsinline>
+            <source src="/imagenes/VideoProject.mp4" type="video/mp4">
+        </video>
+        <div class="header-contenido">
+            <h1>Compra Anticipada</h1>
+            <h2>Reserve su vehículo en línea y complete el proceso de retiro en nuestro concesionario.</h2>
+        </div>
+    </header>
+
+    <section class="encargos">
+        <form class="encargos-form">
+
+            <fieldset>
+                <legend>Datos del Vehículo</legend>
+
+            <label for="marca">Marca</label>
+            <select id="marca" required>
+                <option value="">Seleccione una marca</option>
+                <option>Porsche</option>
+                <option>BMW</option>
+                <option>Audi</option>
+                <option>Nissan</option>
+                <option>Ford</option>
+                <option>Dodge</option>
+                <option>Toyota</option>
+                <option>Infiniti</option>
+                <option>Cadillac</option>
+                <option>Mercedez-Benz</option>
+                <option>Chevrolet</option>
+                <option>Mclaren</option>
+                <option>Ferrari</option>
+            </select>
+
+            <label for="modelo">Modelo</label>
+            <input type="text" id="modelo" required placeholder="911 GT3 RS...">
+
+            <label for="color">Color</label>
+            <select id="color" required>
+                <option value="">Seleccione un color</option>
+                <option>Rojo</option>
+                <option>Azul</option>
+                <option>Blanco</option>
+                <option>Negro</option>
+                <option>Amarillo</option>
+                <option>Verde</option>
+                <option>Naranja</option>
+            </select>
+
+            <label for="año">Año</label>
+            <input type="number" id="año" min="2018" max="2026" required placeholder="2024...">
+
+        </fieldset>
+
+        <div class="button">
+            <a href="formulario.html" class="boton" target="_blank">Continuar solicitud</a>
+        </div>
+
+    </form>
+
+</section>
+    
+</body>
+</html>

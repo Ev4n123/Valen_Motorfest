@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    position: absolute;
+    top: 0;        
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 10;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c01414;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: #c01414 4px solid;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.header-contenido {
+    position: relative;
+    z-index: 2;
+}
+
+.header-contenido h1 {
+    font-size: 3.9rem;
+    font-weight: bold;
+}
+
+.header-contenido h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+select {
+    color: #dfdfdf;
+    font-weight: 600;
+}
+
+option {
+    color: #dfdfdf;
+
+}
+
+.encargos {
+    position: relative;
+    background-image: url("/imagenes/ValenLogo.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+}
+
+.encargos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.encargos-header,
+.encargos-form {
+    position: relative;
+    z-index: 1;
+}
+
+.encargos-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.encargos-header h2 {
+    font-size: 2.4rem;
+    color: #eeecec;
+    margin-bottom: 10px;
+}
+
+.encargos-header p {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.encargos-form {
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid rgba(255,255,255,0.1);
+    background-color: rgba(27, 27, 27, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.encargos-form fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.encargos-form legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e9e8e8;
+    margin-bottom: 20px;
+}
+
+.encargos-form label {
+    font-weight: 600;
+    color: #eee9e9;
+}
+
+.encargos-form input,
+.encargos-form select {
+    padding: 12px;
+    background: #252525;
+    border: 1px solid #333;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.encargos-form input:focus,
+.encargos-form select:focus {
+    outline: none;
+    border-color: #c01414;
+}
+
+.encargos-form input::placeholder,
+.encargos-form select::placeholder {
+    color: #e9e8e8;
+    font-weight: 600;
+}
+
+.button{
+    margin: 2rem 1rem;
+}
+
+.button .boton{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e61a1a;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.button .boton:hover{
+    background-color: #c91414;
+    transform: translateY(-2px);
+}
